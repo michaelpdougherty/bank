@@ -10,26 +10,36 @@ Allows you to save your code projects
 Used in all coding work
 
 # Locate your computer's command line interface (CLI)
+Windows:
+  Press WINDOWS + R
+  Enter cmd.exe
 
-MacOS Terminal
+If you have Windows Powershell installed, use that instead (Unix shell)
 
-Windows cmd.exe
+MacOS Terminal (Unix shell)
 
 https://en.wikipedia.org/wiki/Unix_shell
 
-# Install Google Chrome SSH extension
-Easy SSH client
+# Secure Shell (SSH)
+Allows you to connect to remote computers
 
-Not necessary if you have MacOS or 
+Easy SSH client as Google Chrome extension:
 https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd/related
 
+Not necessary if you have MacOS or PuTTY installed
+
+# RDS = Relational Database Service
+Relational = Primary keys in one table, relative keys in another table
 
 
-#RDS = Relational Database Service
-Amazon Aurora (MySQL)
-MySQL Community Server
+Local hosting = MySQL Community Server
+Cloud hosting = Amazon Aurora (MySQL-based)
 
 # EC2 = Elastic Cloud Computer
+Elastic = 
+
+Cloud Instance => Virtual Remote PC
+
 Operating system = Amazon Linux (CentOS/Fedora)
 Controlled with SSH (Unix commands)
 
