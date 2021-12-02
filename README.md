@@ -1,21 +1,29 @@
 # Sign up for Amazon AWS
 Access to free Managed Relational Database and Elastic Cloud Compute
+
 Must activate account with debit card
 https://portal.aws.amazon.com/billing/signup#/start
 
 # Sign up for GitHub
-Allows you to save code projects on the Internet
-Useful for all CS classes
+Allows you to save your code projects
 
-# Install SSH extension in Google Chrome
-Allows you to connect to another computer
-https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd/related
+Used in all coding work
 
-# Install/Locate Unix Shell on your computer
+# Locate your computer's command line interface (CLI)
+
 MacOS Terminal
-Windows Powershell
+
+Windows cmd.exe
 
 https://en.wikipedia.org/wiki/Unix_shell
+
+# Install Google Chrome SSH extension
+Easy SSH client
+
+Not necessary if you have MacOS or 
+https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd/related
+
+
 
 #RDS = Relational Database Service
 Amazon Aurora (MySQL)
