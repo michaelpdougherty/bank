@@ -1,0 +1,3 @@
+# Sign up for Amazon AWS
+https://portal.aws.amazon.com/billing/signup#/start
+
