@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 	// get all records
 	connection.query('SELECT * FROM trs; SELECT ROUND(SUM(debit), 2), ROUND(SUM(credit), 2) FROM trs', (err, results, fields) => {
 		if (err) throw err
-		res.render('index', {title: "Home page", data: results}) 
+		res.render('index', {title: "TxHistory", data: results}) 
 	})
 })
 
@@ -37,10 +37,10 @@ app.get('/search', (req, res) => {
 			if (results.length == 1) {
 				let words = results[0].descr.split(" ");
 				let wordIndex = (req.query.index) ? req.query.index : 0;
-				
-				let searchStr = "%" + words[wordIndex] + "%";
+				let searchWord = words[wordIndex]	
+				let searchStr = "%" + searchWord + "%";
 				connection.query('SELECT * FROM trs WHERE descr LIKE ?; SELECT ROUND(SUM(debit), 2), ROUND(SUM(credit), 2) FROM trs WHERE descr LIKE ?', [searchStr, searchStr], (err, results, fields) => {
-					res.render('search', {title: "Search results", data: results, searchTerm: words[wordIndex]})
+					res.render('search', {title: "TxHistory: " + searchWord, data: results, searchTerm: words[wordIndex]})
 				})
 			}
 		})
