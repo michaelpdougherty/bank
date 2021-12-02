@@ -1,5 +1,5 @@
 # Apache / httpd
-Apache is the world's most popular web server software
+Apache is the world's most popular ***web server*** software
 
 A web server accepts ***HTTP requests*** and returns ***HTML documents*** (how all websites work)
 
@@ -21,17 +21,26 @@ It is based on ***git*** and ***version control***
 
 https://kinsta.com/knowledgebase/what-is-github/
 
-# Sign up for Amazon AWS
-Access to free Managed Relational Database and Elastic Cloud Compute
+# Sign up for Amazon Web Services
+Cloud computing = the practice of using a network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or a personal computer
 
-Must activate account with debit card
+# Cloud database and Cloud instance
+
+Cloud database = database server running on another computer
+
+Cloud instance = access to a new computer to be used for ***any purpose*** (web server, application server)
+
+AWS ***IS*** CLOUD COMPUTING
+
+https://aws.amazon.com/what-is-aws/
+
+https://aws.amazon.com/what-is-cloud-computing/
+
+You can use it for free as long as you activate your account with a debit card
 
 https://portal.aws.amazon.com/billing/signup#/start
 
-# Sign up for GitHub
-Allows you to save your code projects
 
-Used in all coding work
 
 # Locate your computer's command line interface (CLI)
 Windows:
@@ -61,6 +70,7 @@ Allows you to connect multiple data tables
 Local hosting = MySQL Community Server
 
 Cloud hosting = Amazon Aurora (MySQL-based)
+
 
 # EC2 = Elastic Cloud Compute
 Resources = memory, storage, processing power, etc.
