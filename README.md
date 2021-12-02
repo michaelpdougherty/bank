@@ -1,7 +1,31 @@
+# Apache / httpd
+Apache is the world's most popular web server software
+
+A web server accepts ***HTTP requests*** and returns ***HTML documents*** (how all websites work)
+
+https://www.wpbeginner.com/glossary/apache/
+
+Apache also allows ***virtual hosting*** and can act as a ***reverse proxy***
+
+https://en.wikipedia.org/wiki/Virtual_hosting
+
+https://en.wikipedia.org/wiki/Reverse_proxy
+
+
+# GitHub
+GitHub is a website and cloud service that lets people save code online
+
+It is extremely useful in all computer science work
+
+It is based on ***git*** and ***version control***
+
+https://kinsta.com/knowledgebase/what-is-github/
+
 # Sign up for Amazon AWS
 Access to free Managed Relational Database and Elastic Cloud Compute
 
 Must activate account with debit card
+
 https://portal.aws.amazon.com/billing/signup#/start
 
 # Sign up for GitHub
@@ -24,30 +48,31 @@ https://en.wikipedia.org/wiki/Unix_shell
 Allows you to connect to remote computers
 
 Easy SSH client as Google Chrome extension:
+
 https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd/related
 
 Not necessary if you have MacOS or PuTTY installed
 
 # RDS = Relational Database Service
-Relational = Primary keys in one table, relative keys in another table
+Relational = Primary keys in one table, foreign keys in another table
 
+Allows you to connect multiple data tables
 
 Local hosting = MySQL Community Server
+
 Cloud hosting = Amazon Aurora (MySQL-based)
 
-# EC2 = Elastic Cloud Computer
-Elastic = 
-
+# EC2 = Elastic Cloud Compute
+Resources = memory, storage, processing power, etc.
 Cloud Instance => Virtual Remote PC
 
+Elastic = More/less resources according to need
+
 Operating system = Amazon Linux (CentOS/Fedora)
+
 Controlled with SSH (Unix commands)
 
-# Apache / httpd
-Apache is a web server
 
-https://www.wpbeginner.com/glossary/apache/
-Web server / Reverse proxy = Apache / httpd
 
 # Node.js Application Server
 Node.js runs JavaScript code on an operating system
