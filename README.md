@@ -1,3 +1,15 @@
+# Make a GitHub account
+GitHub is a website and cloud service that lets you save code online
+
+It is extremely useful in all computer science work
+
+It is based on ***git*** and ***version control***
+
+https://kinsta.com/knowledgebase/what-is-github/
+
+
+
+
 # Apache / httpd
 Apache is the world's most popular ***web server*** software
 
@@ -12,24 +24,14 @@ https://en.wikipedia.org/wiki/Virtual_hosting
 https://en.wikipedia.org/wiki/Reverse_proxy
 
 
-# GitHub
-GitHub is a website and cloud service that lets people save code online
 
-It is extremely useful in all computer science work
 
-It is based on ***git*** and ***version control***
-
-https://kinsta.com/knowledgebase/what-is-github/
-
-# Sign up for Amazon Web Services
+# Cloud Computing
 Cloud computing = the practice of using a network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or a personal computer
 
-# Cloud database and Cloud instance
+Cloud computing = ***Use of machine resources over the Internet***
 
-Cloud database = database server running on another computer
-
-Cloud instance = access to a new computer to be used for ***any purpose*** (web server, application server)
-
+# Sign up for Amazon Web Services
 AWS ***IS*** CLOUD COMPUTING
 
 https://aws.amazon.com/what-is-aws/
@@ -39,7 +41,6 @@ https://aws.amazon.com/what-is-cloud-computing/
 You can use it for free as long as you activate your account with a debit card
 
 https://portal.aws.amazon.com/billing/signup#/start
-
 
 
 # Locate your computer's command line interface (CLI)
