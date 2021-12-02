@@ -1,0 +1,30 @@
+extends layout.pug
+
+block body
+	body
+		table.table
+			thead
+				th Date
+				th ID
+				th Debit
+				th Credit
+				th Balance
+				th Description
+			tbody
+			each row in data[0]
+				tr
+					td= row.date.toISOString().split("T")[0]
+					td(style="font-weight: bold")= row.id
+					td(style="color: red")= row.debit
+					td(style="color: green")= row.credit
+					td= row.balance
+					td
+						- let words = row.descr.split(" ")
+						each word in words
+							- target = "/search?likeId=" + row.id + "&index=" + words.indexOf(word)
+							a(href=target)= word + " "
+			tr
+				th(colspan=2) Total
+				th= data[1][0]["ROUND(SUM(debit), 2)"]
+				th= data[1][0]["ROUND(SUM(credit), 2)"]
+				
