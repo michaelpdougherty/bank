@@ -7,24 +7,29 @@ block body
 		h4 Results: #{data[0].length}
 	table.table
 		thead
-			th Date
 			th ID
 			th Debit
 			th Credit
 			th Description
+			th Date
 		tbody
 			each row in data[0]
 				tr
-					td= row.date.toISOString().split("T")[0]
-					td(style="font-weight: bold")= row.id
-					td(style="color: red")= row.debit
-					td(style="color: green")= row.credit
+					th= row.id
+					td.red= row.debit
+					td.green= row.credit
 					td
 						- let words = row.descr.split(" ")
 						each word in words
 							- target = "/search?likeId=" + row.id + "&index=" + words.indexOf(word)
 							a(href=target)= word + " "
+					td= row.date.toISOString().split("T")[0]
 			tr
-				th(colspan=2) Total
-				th(style="color: red")= data[1][0]["ROUND(SUM(debit), 2)"]
-				th(style="color: green")= data[1][0]["ROUND(SUM(credit), 2)"]
+				th Total
+				th.red= data[1][0]["ROUND(SUM(debit), 2)"]
+				th.green= data[1][0]["ROUND(SUM(credit), 2)"]
+		//
+			tr
+				th Average
+				th(style="color: red")= data[1][0]["ROUND(AVG(debit), 2)"]
+				th(style="color: green")= data[1][0]["ROUND(AVG(credit), 2)"]

@@ -1,0 +1,64 @@
+extends layout.pug
+
+block body
+	div(style="padding:20px")
+		a(href="/cashapp") Go Back
+		h4 Search Term: #{searchTerm}
+		h4 Results: #{data.length}
+	table.table
+		thead
+			th ID
+			th Date
+			th Tx Type
+			th Amount
+			th Fee
+			th Net Amount
+			th Asset Type
+			th Asset Price
+			th Asset Amount
+			th Status
+			th Notes
+			th To/From
+			th Account
+		tbody
+			- srch = "/cashapp/search?"
+			each row in data
+				tr
+					td(style="font-weight: bold")= row.txId
+					td
+						- date = row.date.toISOString().split("T")[0]
+						- target = srch + "date=" + date
+						a(href=target)= date
+					td
+						- target = srch + "txType=" + row.txType
+						a(href=target)= row.txType
+					td
+						- target = srch + "amt=" + row.amt
+						a(href=target)= row.amt
+					td
+						- target = srch + "fee=" + row.fee
+						a(href=target)= row.fee
+					td
+						- target = srch + "net=" + row.net
+						a(href=target)= row.net
+					td
+						- target = srch + "ast=" + row.ast
+						a(href=target)= row.ast
+					td
+						- target = srch + "astPrice=" + row.astPrice
+						a(href=target)= row.astPrice
+					td
+						- target = srch + "astAmt=" + row.astAmt
+						a(href=target)= row.astAmt
+					td
+						- target = srch + "status=" + row.status
+						a(href=target)= row.status
+					td
+						- target = srch + "notes=" + row.notes
+						a(href=target)= row.notes
+					td
+						- target = srch + "toFrom=" + row.toFrom
+						a(href=target)= row.toFrom
+					td
+						- target = srch + "acc=" + row.acc
+						a(href=target)= row.acc

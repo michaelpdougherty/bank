@@ -1,0 +1,15 @@
+extends layout.pug
+
+block body
+	body
+		table.table.cashTable
+			thead
+				each key in Object.keys(data[0])
+					th= key
+			tbody
+			each row in data
+				tr
+				each key in Object.keys(row)
+					- target = "/cashapp/search?" + key + "=" + row[key]
+					td
+						a(href=target).searchKey= row[key]
