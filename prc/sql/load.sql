@@ -6,3 +6,6 @@ FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 LINES;
+UPDATE trs SET debit = NULL WHERE debit = 0;
+UPDATE trs SET credit = NULL WHERE credit = 0;
+UPDATE trs SET balance = NULL WHERE balance = 0;
