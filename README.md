@@ -89,9 +89,11 @@ Controlled with SSH (Unix commands)
 Node.js runs JavaScript code on an operating system
 
 Uses Express.js to listen on port 3000
+
 https://expressjs.com/
 
 Uses mysql npm package to connect to AWS database server
+
 https://github.com/mysqljs/mysql
 
 # Reverse proxy
